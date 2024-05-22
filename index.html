@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Assets/titleicon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -23,13 +24,13 @@
         
 
             <div class="forma">
-                <form action=""> 
+                <form id="cityForm"> 
                     <button type="submit"> <img src="Assets/search.png" alt=""></button>
                     <input id="searchBar" type="text">
                  </form>
                  <div class="tempButtons">
-                    <button class="cel">C&deg</button>
-                    <button class="far">F&deg</button>
+                    <button id="cel" class="cel">C&deg</button>
+                    <button id="far" class="far">F&deg</button>
                  </div>
                 
             </div>
@@ -41,15 +42,15 @@
                         <h2 id="cityName">Athens</h2>
                         <h3 id="date"></h3>
                         <p id="weatherCondition">Sunny</p>
-                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
-                        <h1 id="temp">20&deg</h1>
+                        <img id="apiIcon1" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
+                        <h1><span id="temp">20</span>&deg</h1>
                     </div>
     
                     <div class="weatherSecondary">
-                        <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Real Feel <br> <span id="feelTemp">25&deg</span></p> </div>
-                        <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br> <span id="humidityNow">60%</span></p> </div>
-                        <div class="weatherBox"> <img src="Assets/wind.png" alt="windIcon"> <p>Wind <br><span id="windNow">3m/s</span></p> </div>
-                        <div class="weatherBox"> <img src="Assets/pressure.png" alt="pressureIcon"> <p>Pressure <br><span id="pressureNow">1.2bar</span></p> </div>
+                        <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Real Feel <br> <span id="feelTemp">25</span>&deg</p> </div>
+                        <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br> <span id="humidityNow">60</span>%</p> </div>
+                        <div class="weatherBox"> <img src="Assets/wind.png" alt="windIcon"> <p>Wind <br><span id="windNow">3</span> m/s</p> </div>
+                        <div class="weatherBox"> <img src="Assets/pressure.png" alt="pressureIcon"> <p>Pressure <br><span id="pressureNow">1.2</span> hPa</p> </div>
                     </div>
                 </div>
              </div>
@@ -59,16 +60,16 @@
                     <h2>Tomorrow</h2>
                     <div class="ndContainer">
                         <div class="box box1">
-                            <img id="icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
+                            <img id="apiIcon2" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
                         </div>
                         <div class="box box2">
-                            <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Temp <br><span>21&deg</span></p> </div>
+                            <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Temp <br><span id="temp2">21</span>&deg</p> </div>
                         </div>
                         <div class="box box3">
-                            <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br> <span>66%</span></p> </div>
+                            <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br> <span id="humid2">66</span>%</p> </div>
                         </div>
                         <div class="box box4">
-                        <div class="weatherBox"> <img src="Assets/wind.png" alt="pressureIcon"> <p>Wind <br><span>6.5m/s</span></p> </div>
+                        <div class="weatherBox"> <img src="Assets/wind.png" alt="pressureIcon"> <p>Wind <br><span id="wind2">6.5</span> m/s</p> </div>
                         </div>
                     </div>
                 </div>
@@ -76,16 +77,16 @@
                     <h2>Day After</h2>
                     <div class="ndContainer">
                         <div class="box box1">
-                            <img id="icon"  src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
+                            <img id="apiIcon3"  src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
                         </div>
                         <div class="box box2">
-                            <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Temp <br><span>21&deg</span></p> </div>
+                            <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Temp <br><span id="temp3">21</span>&deg</p> </div>
                         </div>
                         <div class="box box3">
-                            <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br><span>60%</span></p> </div>
+                            <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br><span id="humid3">60</span>%</p> </div>
                         </div>
                         <div class="box box4">
-                        <div class="weatherBox"> <img src="Assets/wind.png" alt="windIcon"> <p>Wind <br><span>4.5m/s</span></p> </div>
+                        <div class="weatherBox"> <img src="Assets/wind.png" alt="windIcon"> <p>Wind <br><span id="wind3">4.5</span> m/s</p> </div>
                         </div>
                     </div>
                 </div>
