@@ -5,72 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="weather">
-        <form action=""> 
-            <button type="submit"> <img src="Assets/search.png" alt=""></button>
-            <input type="text">
-            <button class="cel">C&deg</button>
-            <button class="far">F&deg</button>
-         </form>
 
-         <div class="weatherToday">
-            <div class="weatherWrapper">
-                <div class="weatherMain">
-                    <h2 id="cityName">Athens</h2>
-                    <h3 id="date"></h3>
-                    <p id="weatherCondition">Sunny</p>
-                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
-                    <h1 id="temp">20&deg</h1>
-                </div>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="Assets/hd1119_1080p_12000br.mp4" type="video/mp4">
+        </video>
 
-                <div class="weatherSecondary">
-                    <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Real Feel <br> <span id="feelTemp">25&deg</span></p> </div>
-                    <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br> <span id="humidityNow">60%</span></p> </div>
-                    <div class="weatherBox"> <img src="Assets/wind.png" alt="windIcon"> <p>Wind <br><span id="windNow">3m/s</span></p> </div>
-                    <div class="weatherBox"> <img src="Assets/pressure.png" alt="pressureIcon"> <p>Pressure <br><span id="pressureNow">1.2bar</span></p> </div>
-                </div>
-            </div>
-         </div>
+    </div>
 
-         <div class="nextDays">
-            <div class="tomorrow">
-                <h2>Tomorrow</h2>
-                <div class="ndContainer">
-                    <div class="box box1">
-                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
-                    </div>
-                    <div class="box box2">
-                        <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>21&deg</p> </div>
-                    </div>
-                    <div class="box box3">
-                        <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>66%</p> </div>
-                    </div>
-                    <div class="box box4">
-                    <div class="weatherBox"> <img src="Assets/wind.png" alt="pressureIcon"> <p>6.5m/s</p> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dayAfter">
-                <h2>Day After</h2>
-                <div class="ndContainer">
-                    <div class="box box1">
-                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
-                    </div>
-                    <div class="box box2">
-                        <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>21&deg</p> </div>
-                    </div>
-                    <div class="box box3">
-                        <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>60%</p> </div>
-                    </div>
-                    <div class="box box4">
-                    <div class="weatherBox"> <img src="Assets/wind.png" alt="windIcon"> <p>4.5m/s</p> </div>
-                    </div>
-                </div>
+    <div class="showContainer">
+        <div class="weather">
+        
+
+            <div class="forma">
+                <form action=""> 
+                    <button type="submit"> <img src="Assets/search.png" alt=""></button>
+                    <input id="searchBar" type="text">
+                 </form>
+                 <div class="tempButtons">
+                    <button class="cel">C&deg</button>
+                    <button class="far">F&deg</button>
+                 </div>
+                
             </div>
             
-         </div>
+
+             <div class="weatherToday">
+                <div class="weatherWrapper">
+                    <div class="weatherMain">
+                        <h2 id="cityName">Athens</h2>
+                        <h3 id="date"></h3>
+                        <p id="weatherCondition">Sunny</p>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
+                        <h1 id="temp">20&deg</h1>
+                    </div>
+    
+                    <div class="weatherSecondary">
+                        <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Real Feel <br> <span id="feelTemp">25&deg</span></p> </div>
+                        <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br> <span id="humidityNow">60%</span></p> </div>
+                        <div class="weatherBox"> <img src="Assets/wind.png" alt="windIcon"> <p>Wind <br><span id="windNow">3m/s</span></p> </div>
+                        <div class="weatherBox"> <img src="Assets/pressure.png" alt="pressureIcon"> <p>Pressure <br><span id="pressureNow">1.2bar</span></p> </div>
+                    </div>
+                </div>
+             </div>
+    
+             <div class="nextDays">
+                <div class="tomorrow">
+                    <h2>Tomorrow</h2>
+                    <div class="ndContainer">
+                        <div class="box box1">
+                            <img id="icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
+                        </div>
+                        <div class="box box2">
+                            <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Temp <br><span>21&deg</span></p> </div>
+                        </div>
+                        <div class="box box3">
+                            <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br> <span>66%</span></p> </div>
+                        </div>
+                        <div class="box box4">
+                        <div class="weatherBox"> <img src="Assets/wind.png" alt="pressureIcon"> <p>Wind <br><span>6.5m/s</span></p> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dayAfter">
+                    <h2>Day After</h2>
+                    <div class="ndContainer">
+                        <div class="box box1">
+                            <img id="icon"  src="https://openweathermap.org/img/wn/10d@2x.png" alt="weatherIcon">
+                        </div>
+                        <div class="box box2">
+                            <div class="weatherBox"> <img src="Assets/temp.png" alt="tempIcon"> <p>Temp <br><span>21&deg</span></p> </div>
+                        </div>
+                        <div class="box box3">
+                            <div class="weatherBox"> <img src="Assets/humidity.png" alt="humidityIcon"> <p>Humidity <br><span>60%</span></p> </div>
+                        </div>
+                        <div class="box box4">
+                        <div class="weatherBox"> <img src="Assets/wind.png" alt="windIcon"> <p>Wind <br><span>4.5m/s</span></p> </div>
+                        </div>
+                    </div>
+                </div>
+                
+             </div>
+        </div>
+        
+
+
     </div>
     
     <script src="script.js"></script>

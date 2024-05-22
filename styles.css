@@ -6,7 +6,8 @@
 }
 
 body{
-    background-color: green;
+    color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 button{
@@ -14,8 +15,134 @@ button{
     border: none;
     padding: 0;
     cursor: pointer;
-    
+    color: white;
 }
 .weather img {
     scale: 0.8;
+}
+
+.showContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 900px;
+}
+
+.tempButtons {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 15px;
+
+    gap: 10px;
+}
+
+.tempButtons button {
+    scale: 1.5;
+}
+
+.forma{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    border-radius: 20px;
+}
+
+form button {
+    scale: 0.8;
+}
+
+#searchBar{
+    border: none;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.weather{
+    backdrop-filter: blur(5px); 
+    background-color: rgba(75, 74, 74, 0.3); 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weatherMain{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.weatherMain img{
+    scale: 1.5;
+}
+.weatherSecondary img{
+    max-height: 32px;
+    max-width: 32px;
+}
+
+.weatherSecondary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.weatherBox{
+    display: flex;
+}
+.nextDays{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+}
+
+
+.ndContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    max-width: 32px;
+    max-height: 32px;    
+}
+
+#icon {
+
+    all: unset;
+}
+
+
+.video-background {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
 }
